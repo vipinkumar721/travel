@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import DummyData from './DummyData';
-import CardDetails from './CardDetails';
 
 const slides = [
     {
@@ -65,19 +64,18 @@ const Home = () => {
                 </div>
                 <button
                     onClick={prevSlide}
-                    className="absolute bg-transparent top-1/2 left-4 transform -translate-y-1/2 bg-white text-black p-4 rounded-full shadow-lg focus:outline-none"
+                    className="absolute top-1/2 left-4 transform -translate-y-1/2  text-black p-4 rounded-full shadow-lg focus:outline-none"
                 >
                     &#10094;
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute bg-transparent top-1/2 right-4 transform -translate-y-1/2 bg-white text-black p-4 rounded-full shadow-lg focus:outline-none"
+                    className="absolute top-1/2 right-4 transform -translate-y-1/2  text-black p-4 rounded-full shadow-lg focus:outline-none"
                 >
                     &#10095;
                 </button>
             </div>
             <DummyData />
-            <CardDetails />
         </>
     );
 };
