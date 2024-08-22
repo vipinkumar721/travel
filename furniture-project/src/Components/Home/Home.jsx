@@ -46,16 +46,16 @@ const Home = () => {
                             className="w-full h-screen flex-shrink-0 bg-cover bg-center"
                             style={{ backgroundImage: `url(${slide.imageUrl})` }}
                         >
-                            <div className="w-1/2 h-full bg-black bg-opacity-20 flex flex-col justify-center items-start p-12">
+                            <div className="w-full h-full bg-black bg-opacity-30 flex flex-col justify-center gap-20 items-center text-center p-4">
                                 <div>
-                                    <span className="text-white text-xl mb-2 bg-red-600 px-2 py-1 rounded">
+                                    <span className="text-white text-xl mb-4 bg-red-600 px-2 py-1 rounded">
                                         {slide.location}
                                     </span>
-                                    <h1 className="text-white text-4xl  md:text-6xl font-bold leading-tight">
+                                    <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight">
                                         {slide.content}
                                     </h1>
                                 </div>
-                                <button className="bg-red-600 text-white text-sm px-6 py-3 mt-8 rounded-md hover:bg-red-700 transition ">
+                                <button className="bg-red-600 text-white text-sm px-6 py-3 mt-8 rounded-md hover:bg-red-700 transition">
                                     Learn More
                                 </button>
                             </div>
@@ -64,17 +64,18 @@ const Home = () => {
                 </div>
                 <button
                     onClick={prevSlide}
-                    className="absolute top-1/2 left-4 transform -translate-y-1/2  text-black p-4 rounded-full shadow-lg focus:outline-none"
+                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white hover:bg-red-700 p-4 rounded-full shadow-lg focus:outline-none"
                 >
                     &#10094;
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute top-1/2 right-4 transform -translate-y-1/2  text-black p-4 rounded-full shadow-lg focus:outline-none"
+                    className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white hover:bg-red-700 p-4 rounded-full shadow-lg focus:outline-none"
                 >
                     &#10095;
                 </button>
             </div>
+
             <DummyData />
         </>
     );

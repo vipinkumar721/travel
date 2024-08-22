@@ -9,12 +9,11 @@ function App() {
   return (
     <>
       <Home />
-      <div className="flex justify-center items-center h-full sm:h-auto md:h-full sm:p-5 md:p-10 lg:p-20 bg-gray-100">
+      <div className="">
         <PropertyList />
       </div>
         <FullscreenPropertyComponent />
         <ContactSection />
-
     </>
   )
 }

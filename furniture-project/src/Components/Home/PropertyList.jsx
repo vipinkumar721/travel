@@ -79,11 +79,15 @@ const properties = [
 
 const PropertyList = () => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
-            {properties.map((property) => (
-                <PropertyCard key={property.id} property={property} />
-            ))}
-        </div>
+        <>
+            <div className='flex justify-center items-center h-full sm:h-auto md:h-full sm:p-5 md:p-10 lg:p-20 bg-gray-100'>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+                    {properties.map((property) => (
+                        <PropertyCard key={property.id} property={property} />
+                    ))}
+                </div>
+            </div>
+        </>
 
     );
 };
