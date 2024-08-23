@@ -7,6 +7,7 @@ import Contact from './Components/Pages/Contact'
 import Home from './Components/Home/Home'
 import PropertyLayout from './Components/Pages/PropertyLayout';
 import Footer from "./Components/footer/Footer"
+import AuthForm from './Components/Pages/Login/AuthForm';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,8 +31,18 @@ function App() {
       path:"/",
       element: <><Navbar/><Home/><Footer/></>
     },
+    {
+      path:"/",
+      element:<><AuthForm/></>
+    }
 ])
-
+return(
+  <>
+    <RouterProvider router={router}/>
+    <AuthForm/>
+  </>
+)
+}
 export default App
 
 
